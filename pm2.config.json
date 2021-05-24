@@ -2,8 +2,7 @@
   "apps": [
     {
       "name": "mobx-immutable-cart",
-      "script": "npm",
-      "args": "start"
+      "script": "./server/index.js"
     }
   ]
 }

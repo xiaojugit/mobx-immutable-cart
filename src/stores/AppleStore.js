@@ -58,14 +58,13 @@ class AppleStore {
     this.isPicking = true;
     this.buttonText = '正在摘...'
 
-    await getApple().then(() => {
-
-    });
+    await getApple()
 
     runInAction(() => {
+      const weight = Math.floor(200 + Math.random() * 50);
       this.appleList.push({
         id: ++this.appleId,
-        weight: 233,
+        weight,
         isEaten: false
       });
       this.buttonText = '摘苹果';
